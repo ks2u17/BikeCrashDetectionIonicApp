@@ -1,0 +1,54 @@
+ion-content.home {  // content
+     --ion-background-color: rgb(139, 236, 215); 
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     font-size: 1.1em;
+}
+
+ion-header.home1 {
+    --ion-background-color: rgb(156, 145, 255);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+     
+}
+
+ion-title.home2 {   // title
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+
+}
+ion-label.home3{  // labels
+    color:rgb(11, 10, 12);
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.logo{
+    height: 170px;
+    margin-left: 120px;
+    align-items: center;
+}
+
+.home5{ // login details
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(34, 23, 133);
+    margin-right: 35px;
+    margin-left: 10px;
+    
+}
+form.home6{ // form
+   border: 10px;  
+   border-color: rgb(34, 23, 133);
+   border-style:ridge;
+   line-height: normal;
+}
+
+ion-button.home7{ // button
+    background-color: rgb(156, 145, 255);
+    width:fit;
+    color: black;
+    font-weight: bold;
+}

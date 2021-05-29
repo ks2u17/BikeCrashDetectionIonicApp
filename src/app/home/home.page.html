@@ -1,0 +1,34 @@
+<ion-header padding class ="home1">
+  <ion-toolbar>
+    <ion-title padding class="home2">
+    <div class= "ion-text-left">
+      Login
+    </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class ="home">
+  <img src="assets/imgs/bike.png" class="logo">
+  <p padding class="home5">LOGIN DETAILS</p>
+  <form padding class="home6">
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="home3" color="black">Username</ion-label>
+      <ion-input type="text" required [(ngModel)]="data1.name" name="user"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="home3" color="black">Password</ion-label>
+      <ion-input type="password" required [(ngModel)]="data1.pass" name="pass"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="getStorage()" type="submit" expand="block" color=rgb padding class="home7">Sign In</ion-button>
+        <a [routerLink]="['/registration']" class="small-text">Register Your Details</a>
+        <p></p>
+        <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

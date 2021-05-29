@@ -1,0 +1,67 @@
+<ion-header padding class="registration">
+  <ion-toolbar>
+    <ion-title padding class="registration1" >Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="registration2">
+  <form padding class="registration5">
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="registration3" color="black">Name</ion-label>
+      <ion-input type="text" ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="registration3" color="black">Username</ion-label>
+      <ion-input type="text" [(ngModel)] = "keydata.username" name="username"  ></ion-input>
+    </ion-item>
+    
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="registration3" color="black">Password</ion-label>
+      <ion-input type="password" required [(ngModel)]="getData.password" name="password" ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="registration3" color="black"> Bike Wheel Radius(in m)</ion-label>
+      <ion-input type="number" required [(ngModel)]= "getData.radius" name="radius"  ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label padding class="registration3" color="black">Gender</ion-label>
+      <ion-select placeholder="Select One" [(ngModel)]= "getData.gender" name="gender" >
+        <ion-select-option value="f" >Female</ion-select-option>
+        <ion-select-option value="m" >Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="full" >
+      <ion-label position="floating" padding class="registration3" color="black">Age</ion-label>
+      <ion-input type="number" required [(ngModel)]= "getData.age" name="age"  ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="registration3" color="black">Height (in cm)</ion-label>
+      <ion-input type="number" required [(ngModel)]= "getData.height" name="height"  ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="registration3" color="black">Emergency Contact Number 1</ion-label>
+      <ion-input type="text" required [(ngModel)]= "getData.Emergency_Contact1" name="Emergency_Contact1"  ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="registration3" color="black">Emergency Contact Number 2</ion-label>
+      <ion-input type="text" required [(ngModel)]= "getData.Emergency_Contact2" name="Emergency_Contact2"  ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating" padding class="registration3" color="black">Emergency Contact Number 3</ion-label>
+      <ion-input type="text" required [(ngModel)]= "getData.Emergency_Contact3" name="Emergency_Contact3"  ></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="setStorage()" [routerLink]="['/home']"  expand="block" padding class="registration4" color=rgb>Sign Up</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

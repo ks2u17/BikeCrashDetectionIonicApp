@@ -1,0 +1,36 @@
+ion-header.registration{ // header
+    --ion-background-color: rgb(156, 145, 255);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+ion-title.registration1 {  // title
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+
+}
+ion-content.registration2 {  // content
+    --ion-background-color: rgb(139, 236, 215); 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+ion-label.registration3{  //label
+    color:rgb(11, 10, 12);
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+ion-button.registration4{
+    background-color: rgb(156, 145, 255);
+    width:fit;
+    color: black;
+    font-weight: bold;
+}
+form.registration5{ // form
+    border: 10px;  
+    border-color: rgb(34, 23, 133);
+    border-style:ridge;
+    line-height: normal;
+ }
