@@ -1,0 +1,33 @@
+<ion-header padding class="ble">
+  <ion-toolbar>
+    <ion-title padding class="ble1">
+      BLE Connect
+    </ion-title>
+    <ion-buttons slot="end" color="green">
+      <ion-button (click)="scan()" padding class="ble7" >
+        Scan
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="ble2">
+  <ion-list padding class="ble4"> 
+    <ion-item *ngFor="let device of devices" (click)="deviceSelected(device)">
+      <ion-label padding class="ble3">
+      <h2 padding class="ble5">{{ device.name || 'Unnamed' }}</h2>
+        <p padding class="ble6">{{ device.id }}</p>
+        <p padding class="ble6">RSSI: {{ device.rssi }}</p>
+      </ion-label> 
+    </ion-item>
+   
+   </ion-list> 
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-item>
+    <ion-label padding class="ble3">{{ statusMessage }}</ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>

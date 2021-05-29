@@ -1,0 +1,44 @@
+<ion-header padding class="detail">
+  <ion-toolbar>
+      <ion-title padding class="detail1">{{ peripheral.name || 'Device' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="detail2">
+
+  <ion-card padding class="detail3">
+      <ion-card-header padding class="detail4">
+          {{ peripheral.name || 'Unnamed' }}
+      </ion-card-header>
+      <ion-card-content padding class="detail5">
+          {{ peripheral.id }}
+      </ion-card-content>
+  </ion-card>
+
+ 
+    <ion-card padding class="detail6" >
+      <h1 padding class="detail10">Distance: {{ dis | round: 3 }} km </h1>
+    </ion-card>
+    <ion-card padding class="detail7" >
+      <h1 padding class="detail10">Max Speed: {{ max | round: 3 }}  km/h </h1>
+    </ion-card>
+    <ion-card padding class="detail7"  >
+      <h1 padding class="detail10">Current Speed: {{ current | round: 3 }} km/h </h1>
+    </ion-card>
+    <ion-card padding class="detail7"  >
+      <h1 padding class="detail10">Avg Speed : {{ av | round: 3 }} km/h</h1>
+    </ion-card>
+    <ion-card padding class="detail8"  >
+      <h1 padding class="detail10">Time : {{ hour_1  }} : {{ min_1 }} : {{ sec_1 }}  </h1>
+    </ion-card>
+ 
+    <img src="assets/imgs/bike.png" padding class="logo"> 
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-item>
+          <ion-label padding class="detail9">{{ statusMessage }}</ion-label>
+      </ion-item>
+  </ion-toolbar>
+</ion-footer>
